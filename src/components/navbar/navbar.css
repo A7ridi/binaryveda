@@ -1,0 +1,27 @@
+.navbar {
+	/* background-color: rgb(2, 22, 40); */
+}
+.text-light,
+#offcanvasNavbarDropdown-expand-sm {
+	color: white;
+}
+.navbar-responsive {
+	margin: 10px 40px;
+}
+.gap-nav-link {
+	gap: 10px;
+}
+.sign-up {
+	color: black;
+	border: none;
+	padding: 7px 15px;
+	border-radius: 25px;
+	background-color: white;
+	margin-left: 10px;
+	font-weight: 600;
+}
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+	.navbar-responsive {
+		margin: 5px 5px;
+	}
+}

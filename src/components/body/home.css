@@ -1,0 +1,38 @@
+.build-future {
+	display: flex;
+	margin-top: 80px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.build-left-side {
+	padding: 106px 30px 20px 124px;
+}
+.build-future-title {
+	font-size: 3rem;
+	color: white;
+}
+.build-future-desc {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	line-height: 1.7;
+	margin-top: 13px;
+	margin-bottom: 35px;
+}
+.submit-app {
+	padding: 13px 30px;
+	border: none;
+	border-radius: 30px;
+	background: #0cbcc7;
+	color: white;
+	margin-right: 20px;
+	font-weight: 600;
+}
+.view-api {
+	padding: 13px 40px;
+	border: none;
+	border-radius: 30px;
+	background: white;
+	color: black;
+	font-weight: 600;
+}
