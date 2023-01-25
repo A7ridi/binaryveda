@@ -1,6 +1,3 @@
-.navbar {
-	/* background-color: rgb(2, 22, 40); */
-}
 .text-light,
 #offcanvasNavbarDropdown-expand-sm {
 	color: white;
@@ -20,8 +17,30 @@
 	margin-left: 10px;
 	font-weight: 600;
 }
+.nav-logo img {
+	margin-top: 7px;
+	margin-right: 6px;
+}
 @media only screen and (max-width: 600px) and (min-width: 300px) {
 	.navbar-responsive {
 		margin: 5px 5px;
+	}
+	.navbar-toggler-icon {
+		background-image: url("../../images/menu.png") !important;
+	}
+	.nav-logo img {
+		width: 75px;
+		margin-top: 0px;
+	}
+	.text-light,
+	#offcanvasNavbarDropdown-expand-sm {
+		color: black !important;
+	}
+	.offcanvas-body,
+	.offcanvas-header {
+		margin-left: 2rem;
+	}
+	.sign-up {
+		border: 2px solid grey;
 	}
 }

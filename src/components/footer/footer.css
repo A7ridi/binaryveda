@@ -1,0 +1,24 @@
+.footer-main {
+	color: white;
+	display: flex;
+	margin: 1rem 8rem 0 8rem;
+	gap: 7rem;
+	background-color: rgba(12, 16, 20, 255);
+}
+.footer-links {
+	display: flex;
+	gap: 7rem;
+}
+.footer-header {
+	margin-bottom: 1rem;
+	font-size: 18px;
+	font-weight: 600;
+}
+.link-name {
+	margin-bottom: 8px;
+	font-size: 14px;
+	color: grey;
+}
+.footer-dot {
+	margin-top: 5rem;
+}

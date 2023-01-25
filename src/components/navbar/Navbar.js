@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./navbar.css";
+import Logo from "../../images/logo.svg";
 
 function Nvabar() {
 	return (
@@ -13,7 +14,9 @@ function Nvabar() {
 				<Navbar key={expand} expand={expand} className="mb-3 navbar">
 					<Container fluid className="navbar-responsive">
 						<Navbar.Brand className="text-white">
-							Marvel | Developers
+							<div className="d-flex nav-logo">
+								<img src={Logo} alt="logo" width={50} />| Developers
+							</div>
 						</Navbar.Brand>
 						<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 						<Navbar.Offcanvas
@@ -26,7 +29,15 @@ function Nvabar() {
 									id={`offcanvasNavbarLabel-expand-${expand}`}
 									className="text-white"
 								>
-									Marvel | Developers
+									<div className="d-flex">
+										<img
+											src={Logo}
+											alt="logo"
+											width={50}
+											className="nav-logo"
+										/>
+										| Developers
+									</div>
 								</Offcanvas.Title>
 							</Offcanvas.Header>
 							<Offcanvas.Body>
@@ -36,14 +47,16 @@ function Nvabar() {
 										id={`offcanvasNavbarDropdown-expand-${expand}`}
 										className="text-light"
 									>
-										<NavDropdown.Item href="#action3">
+										<NavDropdown.Item href="#action3" className="text-light">
 											Iron Man
 										</NavDropdown.Item>
-										<NavDropdown.Item href="#action4">
+										<NavDropdown.Item href="#action4" className="text-light">
 											Ms. Marvel
 										</NavDropdown.Item>
 										<NavDropdown.Divider />
-										<NavDropdown.Item>Thor</NavDropdown.Item>
+										<NavDropdown.Item className="text-light">
+											Thor
+										</NavDropdown.Item>
 									</NavDropdown>
 
 									<Nav.Link className="text-light">Enterprise</Nav.Link>

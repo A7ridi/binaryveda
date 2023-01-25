@@ -1,20 +1,55 @@
-.build-future {
+.build-future,
+.showcase-app {
 	display: flex;
 	margin-top: 80px;
 	margin-left: 20px;
 	margin-right: 20px;
 }
+.slack-bot {
+	display: flex;
+	margin-top: 13rem;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 10rem;
+}
 .build-left-side {
 	padding: 106px 30px 20px 124px;
 }
+.bot-right-side {
+	margin-left: 47px;
+}
+.showcase-left-side {
+	padding: 40px 30px 20px 124px;
+	margin-top: 4rem;
+}
+.bot-left-side {
+	padding: 0px 30px 20px 40px;
+}
+.showcase-right-side {
+	margin-top: 4rem;
+	margin-right: 38px;
+}
 .build-future-title {
 	font-size: 3rem;
+	color: white;
+}
+.showcase-future-title {
+	font-size: 2.2rem;
 	color: white;
 }
 .build-future-desc {
 	font-size: 20px;
 	font-weight: 400;
 	color: white;
+	line-height: 1.7;
+	margin-top: 13px;
+	margin-bottom: 35px;
+}
+.showcase-future-desc {
+	font-size: 18px;
+	font-weight: 400;
+	color: #c2c1c1;
+	width: 83%;
 	line-height: 1.7;
 	margin-top: 13px;
 	margin-bottom: 35px;
@@ -28,11 +63,196 @@
 	margin-right: 20px;
 	font-weight: 600;
 }
-.view-api {
+.view-api,
+.become-partner {
 	padding: 13px 40px;
 	border: none;
 	border-radius: 30px;
 	background: white;
 	color: black;
 	font-weight: 600;
+}
+.integration-btn {
+	margin-left: 20px;
+	padding: 13px 40px;
+	border: 2px solid white;
+	border-radius: 30px;
+	background: transparent;
+	color: white;
+	font-weight: 600;
+}
+.experience {
+	margin-top: 8rem;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.experience-header {
+	width: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.exp-para {
+	margin-top: 1rem;
+	width: 77%;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.exp-cards {
+	display: flex;
+	margin: 3rem;
+}
+.card-img {
+	width: 200px;
+}
+.each-card {
+	width: 401px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 13px;
+}
+.card-text {
+	margin-top: 1rem;
+}
+.card-desc {
+	color: grey;
+	width: 77%;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.reverse-mobile {
+	display: flex;
+	flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+	.build-image,
+	.showcase-image,
+	.bot-image {
+		width: 87vw;
+	}
+	.each-card {
+		width: 100vw;
+	}
+	.build-future {
+		flex-direction: column;
+	}
+	.footer-main {
+		flex-direction: column;
+		gap: 3rem;
+		margin: 1rem 2.2rem;
+	}
+	.exp-cards {
+		flex-direction: column;
+	}
+	.bot-right-side {
+		margin-left: 0px;
+	}
+	.footer-links {
+		gap: 0;
+		flex-wrap: wrap;
+	}
+	.all-links {
+		margin-right: 3rem;
+		margin-bottom: 1rem;
+	}
+	.build-left-side {
+		padding: 0px;
+	}
+	.build-future-title {
+		font-size: 2rem;
+		text-align: center;
+	}
+	.build-future-desc {
+		text-align: center;
+		font-size: 17px;
+	}
+	.build-btn {
+		display: flex;
+		margin-bottom: 6rem;
+		justify-content: center;
+	}
+	.submit-app,
+	.become-partner {
+		padding: 10px 13px;
+		border: none;
+		border-radius: 30px;
+		background: white;
+		color: black;
+		font-weight: 600;
+		font-size: 15px;
+	}
+	.view-api {
+		padding: 10px 13px;
+		border: 2px solid white;
+		border-radius: 30px;
+		background: transparent;
+		color: white;
+		font-weight: 600;
+	}
+	.experience-header {
+		width: 100%;
+	}
+	.exp-heading {
+		margin: 0 22px;
+		font-size: 26px;
+	}
+	.exp-para {
+		width: 91%;
+	}
+	.card-desc {
+		width: 91%;
+		margin-bottom: 4rem;
+	}
+	.card-img {
+		margin-bottom: 2rem;
+	}
+	.reverse-mobile {
+		display: flex;
+		flex-flow: column-reverse;
+	}
+	.slack-bot {
+		margin-top: 0px;
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.bot-right-side {
+		margin-bottom: 5rem;
+	}
+	.bot-left-side {
+		padding: 0px 10px;
+		text-align: center;
+	}
+	.showcase-future-title {
+		font-size: 1.6rem;
+	}
+	.showcase-future-desc {
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+	.slack-bot-btn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.integration-btn {
+		margin-left: 0px;
+		margin-top: 1.5rem;
+	}
+	.showcase-app {
+		margin-top: 0px;
+		margin-bottom: 3rem;
+		flex-flow: column-reverse;
+	}
+	.showcase-left-side {
+		text-align: center;
+		padding: 0px;
+		margin-top: 5rem;
+	}
 }
