@@ -6,8 +6,10 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "./navbar.css";
 import Logo from "../../images/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 function Nvabar() {
+	const navigate = useNavigate();
 	return (
 		<>
 			{["sm"].map((expand) => (
@@ -46,6 +48,7 @@ function Nvabar() {
 										title="Why Marvel"
 										id={`offcanvasNavbarDropdown-expand-${expand}`}
 										className="text-light"
+										onClick={() => navigate("/todo")}
 									>
 										<NavDropdown.Item href="#action3" className="text-light">
 											Iron Man
@@ -59,10 +62,27 @@ function Nvabar() {
 										</NavDropdown.Item>
 									</NavDropdown>
 
-									<Nav.Link className="text-light">Enterprise</Nav.Link>
-									<Nav.Link className="text-light">Pricing</Nav.Link>
-									<Nav.Link className="text-light">Sign in</Nav.Link>
-									<Button className="sign-up">Sign up free</Button>
+									<Nav.Link
+										className="text-light"
+										onClick={() => navigate("/todo")}
+									>
+										Enterprise
+									</Nav.Link>
+									<Nav.Link
+										className="text-light"
+										onClick={() => navigate("/todo")}
+									>
+										Pricing
+									</Nav.Link>
+									<Nav.Link
+										className="text-light"
+										onClick={() => navigate("/todo")}
+									>
+										Sign in
+									</Nav.Link>
+									<Button className="sign-up" onClick={() => navigate("/todo")}>
+										Sign up free
+									</Button>
 								</Nav>
 							</Offcanvas.Body>
 						</Navbar.Offcanvas>

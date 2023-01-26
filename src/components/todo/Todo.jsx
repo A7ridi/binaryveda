@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import Arrow from "../../images/arrow.png";
 import Dots from "../../images/dots.png";
 import { getTodoLists } from "../../redux/actions";
@@ -9,6 +10,7 @@ const Todo = () => {
 	const [addTodo, setAddTodo] = useState("");
 	const { getTodo } = useSelector((state) => state.todo);
 	const dispatch = useDispatch();
+	const navigate = useNavigate();
 
 	const submitHandler = (event) => {
 		if (event.key === "Enter" && addTodo.length > 0) {
@@ -32,6 +34,12 @@ const Todo = () => {
 
 	return (
 		<div className="todo-container">
+			<button
+				className="btn btn-secondary-outline"
+				onClick={() => navigate("/")}
+			>
+				<u>Go Back</u>
+			</button>
 			<div className="todo-box">
 				<div className="todo-header">
 					<div>
