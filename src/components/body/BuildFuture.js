@@ -5,6 +5,7 @@ import GraphQL from "../../images/graphQL.png";
 import Meter from "../../images/meter.png";
 import Media from "../../images/showcase.png";
 import Bot from "../../images/botbot.png";
+import { useNavigate } from "react-router-dom";
 
 const cardData = [
 	{
@@ -25,6 +26,7 @@ const cardData = [
 ];
 
 const BuildFuture = () => {
+	const navigate = useNavigate();
 	return (
 		<>
 			<div className="build-future">
@@ -37,8 +39,12 @@ const BuildFuture = () => {
 						customise Marvel for your team.
 					</h6>
 					<div className="mt-3 build-btn">
-						<button className="submit-app">Submit your app</button>
-						<button className="view-api">View API Docs</button>
+						<button className="submit-app" onClick={() => navigate("/todo")}>
+							Submit your app
+						</button>
+						<button className="view-api" onClick={() => navigate("/todo")}>
+							View API Docs
+						</button>
 					</div>
 				</div>
 				<div className="build-right-side">
@@ -79,8 +85,18 @@ const BuildFuture = () => {
 							partners who wants to help the world bring their ideas to life.
 						</h6>
 						<div className="mt-3">
-							<button className="become-partner">Become a partner</button>
-							<button className="integration-btn">View Integrations</button>
+							<button
+								className="become-partner"
+								onClick={() => navigate("/todo")}
+							>
+								Become a partner
+							</button>
+							<button
+								className="integration-btn"
+								onClick={() => navigate("/todo")}
+							>
+								View Integrations
+							</button>
 						</div>
 					</div>
 					<div className="showcase-right-side">
@@ -102,8 +118,18 @@ const BuildFuture = () => {
 							partners who wants to help the world bring their ideas to life.
 						</h6>
 						<div className="mt-3 slack-bot-btn">
-							<button className="become-partner">Become a partner</button>
-							<button className="integration-btn">View Integrations</button>
+							<button
+								className="become-partner"
+								onClick={() => navigate("/todo")}
+							>
+								Become a partner
+							</button>
+							<button
+								className="integration-btn"
+								onClick={() => navigate("/todo")}
+							>
+								View Integrations
+							</button>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,37 @@
+.todo-container {
+	display: flex;
+	justify-content: center;
+}
+.todo-box {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 4rem;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 20px;
+	width: 300px;
+}
+.todo-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+.form-check,
+.form-check-label,
+.form-check-input {
+	cursor: pointer;
+}
+.add-input {
+	margin-top: 1rem;
+}
+.add-todo {
+	border: none;
+	width: 100%;
+}
+input[type="checkbox"]:checked + label.strikethrough {
+	text-decoration: line-through;
+}
+.add-todo:focus input[type="text"] {
+	background: none;
+}
